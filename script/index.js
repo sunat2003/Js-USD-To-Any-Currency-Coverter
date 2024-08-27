@@ -30,6 +30,7 @@ const exchageRate=async ()=>{
      console.log(data);
      var rate=eval(input.value*data.data[select.value]);
      para.innerText=`${input.value} USD=${rate}${select.value}`;
+     input.value="";
 }
 
 button.addEventListener("click",()=>{
